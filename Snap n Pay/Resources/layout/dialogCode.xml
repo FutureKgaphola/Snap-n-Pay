@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">              
+                    
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@mipmap/yococard"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Powered by Yoco"
+            android:textStyle="bold"
+            android:textColor="?android:attr/colorPrimary"
+            android:layout_gravity="center_vertical"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColorHint="@android:color/black"
+                
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/uniquecode"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:drawableLeft="@drawable/ic_account_balance_wallet_black_18dp"
+            android:drawableTint="@android:color/black"
+            android:hint="enter unique code"
+            android:textSize="15sp"
+        />
+  
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:text="process code"
+        android:id="@+id/procced_checkcode"
+        android:textSize="12sp"
+    />
+
+   
+
+</LinearLayout>

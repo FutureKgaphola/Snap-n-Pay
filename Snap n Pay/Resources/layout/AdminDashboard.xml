@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Admin Dashboard"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">              
+                    
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:orientation="vertical"
+                        android:padding="1dp"
+                        android:id="@+id/frameAddVids"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/darker_gray_card"
+                        >
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:orientation="vertical"
+                            android:layout_gravity="top"
+                            android:background="@drawable/card_white"
+                            
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/snapcard"/>
+                        </LinearLayout>
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:textSize="8dp"
+                            android:layout_margin="2dp"
+                            android:text="update"
+                            android:elevation="3dp"
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+                            android:id="@+id/upload_btn"
+                            app:cornerRadius="5dp"
+                            tools:ignore="XmlNamespace" 
+                            />
+                        <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:elevation="5dp"
+                                android:id="@+id/add_video_btn"
+                                android:tint="@color/colorPrimary"
+                                android:layout_gravity="center"
+                                android:src="@android:drawable/ic_input_add"/>
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:orientation="vertical"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/card_bottom"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@android:color/white"
+                                android:text="add store"/>
+                            
+                        </LinearLayout>
+
+
+                        <ProgressBar
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:indeterminate="true"
+                            android:id="@+id/progBar_vid"
+                            android:layout_gravity="bottom"
+                            android:visibility="gone"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+                    </FrameLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/recycleradds"
+                    />
+
+                </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:layout_margin="5dp"
+        android:drawableTint="?android:attr/colorPrimary"
+        android:text="Payment records and stores"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearStoredetails">
+
+
+           <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColorHint="@android:color/black"
+                android:id="@+id/textInputLayout2"
+                
+              >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/storeEmail"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:drawableLeft="@drawable/ic_person_white_18dp"
+                    android:drawableTint="@android:color/black"
+                    android:hint="store email address"
+                    android:textSize="15sp"
+                />
+  
+            </com.google.android.material.textfield.TextInputLayout>
+
+             <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColorHint="@android:color/black"
+                
+                      >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:id="@+id/storename"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:drawableLeft="@drawable/ic_person_white_18dp"
+                    android:drawableTint="@android:color/black"
+                    android:hint="store Name"
+                    android:textSize="15sp"
+                />
+  
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColorHint="@android:color/black"
+                
+                      >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:id="@+id/storreg"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:drawableTint="@android:color/black"
+                    android:hint="store registation no."
+                    android:textSize="15sp"
+                />
+  
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    >
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                    android:layout_margin="5dp">              
+                    
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@mipmap/yococard"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Powered by Yoco"
+                    android:textStyle="bold"
+                    android:textColor="?android:attr/colorPrimary"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15dp"/>
+
+
+             </LinearLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/colorPrimary"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/Recycleorders"
+        
+                 />
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

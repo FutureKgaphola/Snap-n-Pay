@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "579704087666",
+    "firebase_url": "https://ledet-lab-default-rtdb.firebaseio.com",
+    "project_id": "ledet-lab",
+    "storage_bucket": "ledet-lab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579704087666:android:9279066a119dcd4ca64eeb",
+        "android_client_info": {
+          "package_name": "com.companyname.ledet_lab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579704087666-js46u0fiqoijaugpr6rbbuo47o0h9pbj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqwVFAYJeTqyGChxZ7tl45PV1GSPoQ17E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579704087666-js46u0fiqoijaugpr6rbbuo47o0h9pbj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

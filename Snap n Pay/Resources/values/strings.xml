@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Snap_n_Pay</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">profile</string>
+    <string name="title_notifications">Exit</string>
+</resources>
